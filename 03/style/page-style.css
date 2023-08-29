@@ -1,0 +1,56 @@
+h3{
+    color: blueviolet;
+    /* background-color: black; */
+    background-color: rgb(38, 32, 32);
+    font-size: 35px;
+}
+/* DRY */
+div,p{
+    color: red;
+}
+/* p{
+    color: red;
+} */
+#top{
+    background-color: black;
+}
+h3{
+    color: red;
+}
+div span{
+    color: black;
+}
+span{
+    color: darkblue;
+}
+.text-container{
+    color:white;
+    background-color: black;
+}
+section.text-container{
+    color:white;
+    background-color: black;
+    padding: 100px;
+}
+.big{
+    font-size: 20px;
+}
+.text-container.big{
+    font-size: 40px;
+}
+*{
+    text-decoration: underline;
+}
+ul li:first-child{
+    background-color: yellow;
+}
+ul li:nth-child(3){
+    background-color: rgb(6, 139, 117);
+}
+ul li:last-child{
+    background-color: rgb(220, 6, 192);
+}
+a[href="https://example.org"]{
+    color: orange;
+}
+
