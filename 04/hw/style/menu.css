@@ -58,3 +58,24 @@ input{
     background: #EAE2B7; 
 }
 /* :last-child прибере margin right */
+
+.menu-propositon-item{
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+.proposition-description,
+.propositon-img{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.proposition-description h4{
+    font-size: 30px;
+    margin: 0;
+}
+.propositon-img{
+    padding: 10px 0;
+    margin-right: 20px;
+}
