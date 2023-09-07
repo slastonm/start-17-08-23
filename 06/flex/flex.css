@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+.flex-item{
+    /* width: 300px; */
+    padding: 20px;
+    background-color: yellow;
+    text-align: center;
+    border:1px solid black;
+}
+.i-flex{
+    display: inline-flex;
+    background-color: blueviolet;
+}
+.d-flex{
+    display: flex;
+    height: 400px;
+    background-color: darkgreen;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: flex-dierction + flex-wrap; */
+    /* flex-flow: row-reverse wrap; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* align-items: stretch; */
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+
+    /* row-gap: 50px;
+    column-gap: 20px; */
+    /* gap: 50px 100px; */
+}
+
+.flex-item:nth-child(1){
+    /* font-size: 20px; */
+    /* order:3; */
+    align-self: flex-start;
+    flex-grow: 1;
+}
+.flex-item:nth-child(2){
+    /* font-size: 50px; */
+    /* order:1; */
+    flex-grow: 4;
+
+}
+.flex-item:nth-child(3){
+    /* font-size: 35px; */
+    /* order: 2; */
+    align-self: stretch;
+    flex-grow: 1;
+}
+.flex-item:nth-child(4){
+    /* font-size: 35px; */
+    /* order: 2; */
+    align-self: flex-end;
+}
