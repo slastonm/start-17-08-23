@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --TitleColor:#333;
+    /* --green-color: green; */
+    --page-color:white;
+    --container-size:80%;
+    --container-bg:rgb(190, 9, 139);
+    --container-padding:100px;
+    --paraghraph-color:#999;
+
+}
+button{
+    padding: 100px;
+}
+.container{
+    width: var(--container-size);
+    margin: 0 auto;
+    background-color: var(--container-bg);
+    padding: var(--container-padding);
+}
+p{
+    color: var(--paraghraph-color);
+}
+h3{
+    color: var(--TitleColor);
+}
+h4{
+    --TitleColor:yellow;
+    color:var(--TitleColor);
+}
+@media (max-width:1000px){
+    /* .container{
+        width: 90%;
+        background-color: #333;
+    } */
+    button{
+        padding: 50px;
+    }
+    :root{
+        --TitleColor:#0a0a0a;
+        --container-size:90%;
+        --container-bg:rgb(190, 57, 9);
+        --container-padding:10px;
+        --paraghraph-color:#ffffff;
+    
+    }
+    h4{
+        --TitleColor:rgb(4, 110, 13);
+    }
+}
+@media (max-width:600px){
+    button{
+        padding: 25px;
+    }
+    :root{
+        --TitleColor:#fbfafa;
+        --container-size:90%;
+        --container-bg:rgb(0, 0, 0);
+        --container-padding:10px;
+        --paraghraph-color:#fc0505;
+    }
+    h4{
+        --TitleColor:rgb(255, 0, 191);
+        color:var(--TitleColor);
+    }
+}
