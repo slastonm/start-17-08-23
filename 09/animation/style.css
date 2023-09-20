@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    position: relative;
+}
+@keyframes simple-animation{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+@keyframes pro-animation{
+    0%{
+        background-color: blue;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: blueviolet;
+        top: 0;
+        left: 500px;
+    }
+    50%{
+        background-color: orange;
+        top: 500px;
+        left: 500px;
+    }
+    100%{
+        background-color: yellow;
+        top: 500px;
+        left: 0;
+    }
+}
+.simple{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: gray;
+    /* animation-name: simple-animation; */
+    animation-name: pro-animation;
+    animation-duration: 5s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+}
+.simple.mod{
+    animation-delay: 3s;
+    animation-direction: reverse;
+    /* animation-timing-function: ease-in; */
+    animation-timing-function: cubic-bezier(.09,1.32,.9,.8);
+}
+.test{
+    /* animation: name duration timing-function delay iteration-count; */
+    animation: pro-animation 10s linear 5s 3;
+}

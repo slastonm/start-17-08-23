@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #ccc;
+}
+.i-grid{
+    display: inline-grid;
+    background-color: yellow;
+    padding: 10px;
+}
+.grid{
+    display: grid;
+    background-color: blueviolet;
+    padding: 10px;
+    /* grid-template-columns: 20rem 400px; */
+    /* grid-template-columns: 20rem 40rem; */
+    grid-template-columns: 200px 400px 100px 200px;
+    /* justify-content: end; */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    align-items: end;
+
+
+    /* grid-template-columns: repeat(7, 200px); */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: auto 200px auto;
+     */
+    /* grid-template-columns: minmax(200px, 1fr); */
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+    /* grid-template-rows: 400px 100px; */
+    grid-template-rows: repeat(5, 200px);
+    column-gap: 40px;
+    row-gap: 100px;
+}
+.grid-item{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+ .grid-item:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: yellow;
+    /* justify-self: start; */
+    justify-self: stretch;
+
+    align-self: stretch;
+}
+/*.grid-item:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(255, 72, 0);
+}
+.grid-item:nth-child(3){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: rgb(255, 0, 195);
+} */
+.area{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px auto 200px;
+    grid-template-areas: 
+    "top top top"
+    "left-side . main"
+    "left-side footer footer";
+}
+header{
+    grid-area: top;
+    background-color: green;
+}
+aside{
+    grid-area: left-side;
+    background-color: blue;
+    padding: 50px;
+}
+main{
+    grid-area: main;
+    background-color: rgb(100, 100, 224);
+    padding: 50px;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(13, 203, 187);
+}
+@media (max-width:1024px){
+    .area{
+        grid-template-rows: 100px auto auto 200px;
+        grid-template-areas: 
+        "top top top"
+        "left-side left-side left-side"
+        "main main main"
+        "footer footer footer";
+    }
+}
