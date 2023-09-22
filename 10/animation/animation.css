@@ -1,0 +1,82 @@
+.container{
+    width: 50%;
+    margin: 100px auto;
+}
+.hover-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color:white;
+    border: 3px solid black;
+    /* transition: all 3s linear; */
+    position: relative;
+}
+.hover-btn:hover{
+    background-color: black;
+    border: 3px solid red;
+    border-radius: 3px;
+    transition: all 3s linear;
+    transform: translate(-10px, -20px) skew(40deg, 0deg);
+    /* scale:0.5 0.5; */
+    /* scale:1.1 1.1; */
+    /* rotate: -90deg; */
+    /* padding: 50px;
+    font-size: 50px; */
+
+}
+.hover-element{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(10, 10, 3);
+    /* display: none; */
+    opacity: 0;
+}
+.hover-btn:hover .hover-element{
+    bottom: -20px;
+    opacity: 1;
+    width: 100%;
+    transition: all 1s linear;
+}
+
+.imb-block{
+    width: 400px;
+    border: 2px solid black;
+    transition: all 1s linear;
+    overflow: hidden;
+    position: relative;
+}
+.imb-block:hover{
+    border-radius: 40px;
+}
+.imb-block img{
+    width: 100%;
+}
+.imb-block img{
+    transition: all 1s linear;
+}
+.imb-block:hover img{
+    scale:1.5 1.5;
+    /* rotate: 5deg; */
+    transform: translate(30px, 0);
+}
+.cover{
+    background-color: rgba(0, 0, 0, 0.215);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 0;
+    transition: all 1s linear;
+}
+.imb-block:hover .cover{
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+}
+svg path{
+    fill: red;
+    stroke: gold;
+    stroke-width: 3px;
+}

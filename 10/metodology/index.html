@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        Block Element Modifier
+    </h3>
+    <div class="no-bem">
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+    </div>
+    <div class="list__container">
+        <ul class="list__block">
+            <li class="list__block_item">
+                <a  class="list__block_item__link" href="#">Link</a>
+            </li>
+        </ul>
+        <ul class="list__block--horizontal">
+            <li class="list__block_item">
+                <a  class="list__block_item__link" href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .list__block--horizontal{
+            display: flex;
+            justify-content: space-between;
+        }
+        .list__container{
+
+        }
+        .list__block{
+
+        }
+        .no-bem ul li>a{
+            color: red;
+        }
+    </style>
+    <h3>
+        Atomic CSS 
+    </h3>
+    <h3>
+        Scalable and Modular Architecture for CSS (SMACSS)
+    </h3>
+    <button class="btn is-disabled">
+        Disabled
+    </button>
+    <button class="btn active btn-large">
+        Active
+    </button>
+</body>
+</html>
